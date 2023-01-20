@@ -11,5 +11,8 @@ temp = []
 for el in text:
     if el[0].casefold() == letter.casefold():
         temp.append(el)
-print(f'{letter.upper()} -> {temp}')
 
+if temp:
+    print(f'{letter.upper()} -> {temp}')
+else:
+    print(f'В списке нет таких фруктов')
